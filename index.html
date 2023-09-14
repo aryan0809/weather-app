@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="icon" type="image/x-icon" href="/images/clouds.png">
+  </head>
+  <body>
+    <div
+      class="main flex items-center justify-center h-screen bg-black text-white"
+    >
+      <div
+        class="container bg-gradient-to-b from-blue-300 to-blue-500 w-[30vw] h-[520px] rounded-md"
+      >
+        <div class="search flex items-center justify-center">
+          <input
+            class="capitalize border-2 rounded-3xl text-center mt-3 h-14 w-72 text-black"
+            id="search"
+            spellcheck="true"
+            type="text"
+            placeholder="enter city name"
+          />
+          <div
+            id="searchClick"
+            class="img rounded-full mt-5 ml-2 mb-1 bg-white overflow-hidden h-16 w-16 cursor-pointer"
+          >
+            <img class="h-8 w-7 mx-4 mt-4" src="/images/search.png" alt="" />
+          </div>
+        </div>
+        <div
+          class="centerImg justify-center items-center overflow-hidden h-[180px] w-full px-28"
+        >
+          <img id="weatherIcon" class=" h-44" src="./images/clouds.png" alt="" />
+        </div>
+        <div class="middle items-center justify-center text-center mb-6">
+          <div id="temp" class="temp font-medium text-[3rem]">24° C</div>
+          <div id="city" class="city text-[2rem]">Barabanki</div>
+        </div>
+
+        <div class="bottom relative">
+          <div class="left absolute left-4 flex">
+            <div class="humidity"><img src="./images/humidity.png" alt="" /></div>
+            <div class="num mt-3 ml-3">
+              <p id="humid">50%</p>
+              <p>humidity</p>
+            </div>
+          </div>
+          <div class="right absolute right-4">
+            <div class="wind flex">
+              <div class="windImg"><img src="/images/wind.png" alt="" /></div>
+              <div class="speed mt-3 ml-3">
+                <p id="windSpeed">24 km/h</p>
+                <p>Wind speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
